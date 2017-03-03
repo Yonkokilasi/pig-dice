@@ -38,3 +38,44 @@ Player.prototype.newGame = function(){
   this.totalscore = 0;
   this.Name ="";
 }
+var clear = function(){
+    $(".player1Name").val("");
+     $(".player2Name").val("");
+    
+}
+//front-end
+
+$(document).ready(function(event){
+    $("button#start").click(function(event){
+        player1 = new Player (true);
+        player2 - new Player (false);
+        $(".player-console").show();
+        $(".startmenu").hide();
+    var player1Name = $(".player1Name").val();
+    $("#player1Name").text(player1Name);
+
+    var player2Name = $(".player2Name").val();
+    $("#player2Name").text(player2Name);
+
+    player1.playerName=player1Name;
+    player2.playerName=player2Name;
+    });
+    $("button#newgame").click(function(event){
+        $(".player-console").hide();
+        clear();
+        player1.newGame();
+        player2.newGame();
+        $("#round-total-1").empty
+         $("#total-score-1").empty();
+         $("#die-roll-1").empty();
+         $("#round-total-2").empty();
+         $("#total-score-2").empty();
+         $("#die-roll-2").empty();
+         $(".start-menu").show();
+    });
+    
+//    $("form#players").submit(){
+//        var player1Name=$("input#first").val();
+//        var player2Name=$("input#second").val();
+//    
+})
