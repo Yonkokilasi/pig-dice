@@ -49,7 +49,7 @@ $(document).ready(function(event){
     $("button#start").click(function(event){
         player1 = new Player (true);
         player2 - new Player (false);
-        $(".player-console").show();
+        $(".player-panel").show();
         $(".startmenu").hide();
     var player1Name = $(".player1Name").val();
     $("#player1Name").text(player1Name);
@@ -61,7 +61,7 @@ $(document).ready(function(event){
     player2.playerName=player2Name;
     });
     $("button#newgame").click(function(event){
-        $(".player-console").hide();
+        $(".player-panel").hide();
         clear();
         player1.newGame();
         player2.newGame();
@@ -73,6 +73,12 @@ $(document).ready(function(event){
          $("#die-roll-2").empty();
          $(".start-menu").show();
     });
+    $("button.btn-roll-p1").click(function(event){
+        player.roll = throwdice();
+        $("#die-roll-1").text(player1.roll);
+        player1.rollfirst();
+        ("#round-total-1").text
+    })
     
 //    $("form#players").submit(){
 //        var player1Name=$("input#first").val();
