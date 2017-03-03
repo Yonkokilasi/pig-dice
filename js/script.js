@@ -3,7 +3,7 @@ var player1="";
 var player2="";
 
 var throwdice= function (){
-    return.Math.floor(Math.random()*6) +1;
+    return.Math.floor(Math.random()*6)+1;
 }
 function Player (turn){
     this.roll = 0;
@@ -29,9 +29,9 @@ Player.prototype.hold = function(){
 }
 Player.prototype.winner = function(){
     is (this.totalscore>= 100){
-        alert(this.Name"You are the chosen one :)")
-    }
-}
+        alert(this.Name + "You are the chosen one :)");
+    };
+};
 Player.prototype.newGame = function(){
     this.roll =0;
      this.score = 0;
@@ -77,8 +77,30 @@ $(document).ready(function(event){
         player.roll = throwdice();
         $("#die-roll-1").text(player1.roll);
         player1.rollfirst();
-        ("#round-total-1").text
-    })
+        ("#round-total-1").text(player1.score);
+    });
+     $("button.btn-roll-p2").click(function(event){
+        player.roll = throwdice();
+        $("#die-roll-2").text(player2.roll);
+        player1.rollfirst();
+        ("#round-total-2").text(player2.score);
+    });
+    $(".btn-hold-p1").click(function(event){
+        player1.hold();
+        $("#total-score-1").tect(player1.totalscore);
+        $("round-total-1").empty();
+         $("#die-roll-1").empty();
+        player1.winner();   
+    });
+    $(".btn-hold-p1").click(function(event){
+        player1.hold();
+        $("#total-score-1").tect(player1.totalscore);
+        $("round-total-1").empty();
+         $("#die-roll-1").empty();
+        player1.winner();   
+    });
+    
+    
     
 //    $("form#players").submit(){
 //        var player1Name=$("input#first").val();
