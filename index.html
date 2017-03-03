@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="robots" content="index,follow" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
     <script src="js/script.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Amiko|Libre+Baskerville|Mr+Dafoe|Raleway|Source+Sans+Pro" rel="stylesheet">
@@ -17,13 +18,27 @@
 <body>
     <div id="header">
        <img src="img/giphy.gif">
-        <button id="start">Start</button>
+      
     </div>
     <div class="wrapper">
         <h1 id="head">Let's play some pig Dice</h1>
-        <button class="btn-new">New game</button>
+        
     <div class="container">
-       <div class="player-panel">
+      <form id="player-1">
+          <div class="form-group">
+              <label for="player1Name">Enter Name for Player 1</label>
+              <input class="player1Name form_control" type="text" placeholder = "Jane Doe" >
+          </div>
+        </form>
+        <form id=player-2>
+           <div class="form-group">
+           <label for="player2Name">Enter Name for Player 2</label>
+              <input class="player2Name form_control" type="text" placeholder = "John Doe">
+            </div>
+              <button id="start" class="btn btn-info ">Start</button>
+        </form>
+       <div class="player-panel container">
+      <button class="btn-new">New game</button>
         <div class="player-name" id="name-0">Player 1
         </div>
         
@@ -31,9 +46,10 @@
         <div class="player-current-label">Current</div>
         <div class="player-current-score" id="current-0">0</div>
        <button class="btn-roll-p1">Roll dice</button>
-            <button class="btn-hold-p1">Hold</button>
+        <button class="btn-hold-p1">Hold</button>
+        
         <div class="player-1-panel">
-            <div class="player-name" id="name-1"><h2>Player 2</h2></div>
+        <div class="player-name" id="name-1"><h2>Player 2</h2></div>
             <div class="player-score" id="score-1">0</div>
             <div class="player-current-label">Current</div>
             <div class="player-current-score" id="current-1">0</div>
