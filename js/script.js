@@ -3,8 +3,8 @@ var player1 = "";
 var player2 = "";
 
 var throwdice = function () {
-    return Math.floor(6 *Math.random() ) + 1;
-}
+   return Math.floor(6*Math.random())+1;
+};
 
 function Player(turn) {
     this.roll = 0;
@@ -20,7 +20,7 @@ Player.prototype.rollfirst = function () {
     } else {
         this.score += this.roll;
     }
-}
+};
 
 // on hold
 Player.prototype.hold = function () {
@@ -31,7 +31,7 @@ Player.prototype.hold = function () {
 Player.prototype.winner = function () {
     if (this.totalscore >= 100) {
         alert(this.Name + "You are the chosen one :)");
-    };
+    }
 };
 Player.prototype.newGame = function () {
     this.roll = 0;
@@ -47,20 +47,24 @@ var clear = function () {
 //front-end
 
 $(document).ready(function (event) {
+    
     $("button#start").click(function (event) {
+        
         player1 = new Player(true);
         player2 - new Player(false);
         $(".player-panel").show();
         $(".startmenu").hide();
+        
         var player1Name = $(".player1Name").val();
         $("#player1Name").text(player1Name);
 
         var player2Name = $(".player2Name").val();
         $("#player2Name").text(player2Name);
 
-        player1.playerName = player1Name;
-        player2.playerName = player2Name;
+        player1.Name = player1Name;
+        player2.Name = player2Name;
     });
+    
     $("button#newgame").click(function (event) {
         $(".player-panel").hide();
         clear();
