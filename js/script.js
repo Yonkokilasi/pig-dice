@@ -74,33 +74,33 @@ $(document).ready(function (event) {
         $("#die-roll-2").empty();
         $(".start-menu").show();
     });
-    $("button.btn-roll-p1").click(function (event) {
+    $("button#btn-roll-p1").click(function (event) {
         player1.roll = throwdice();
         $("#die-roll-1").text(player1.roll);
         player1.rollfirst();
         ("#round-total-1").text(player1.score);
     });
-    $("button.btn-roll-p2").click(function (event) {
+    $("button#btn-roll-p2").click(function (event) {
         player2.roll = throwdice();
         $("#die-roll-2").text(player2.roll);
         player1.rollfirst();
         ("#round-total-2").text(player2.score);
     });
-    $(".btn-hold-p1").click(function (event) {
+    $("#btn-hold-p1").click(function (event) {
         player1.hold();
         $("#total-score-1").tect(player1.totalscore);
         $("round-total-1").empty();
         $("#die-roll-1").empty();
         player1.winner();
     });
-    $(".btn-hold-p1").click(function (event) {
+    $("#btn-hold-p1").click(function (event) {
         player1.hold();
         $("#total-score-1").text(player1.totalscore);
         $("round-total-1").empty();
         $("#die-roll-1").empty();
         player1.winner();
     });
-    $(".btn-hold-p2").click(function (event) {
+    $("#btn-hold-p2").click(function (event) {
         player1.hold();
         $("#total-score-2").text(player2.totalscore);
         $("round-total-2").empty();

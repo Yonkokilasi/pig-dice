@@ -1,11 +1,8 @@
 #header{
-    background-image: url('https://www.google.fr/url?sa=i&rct=j&q=&esrc=s&source=images&cd=&cad=rja&uact=8&ved=0ahUKEwi534zImLrSAhWjIMAKHcswC8QQjRwIBQ&url=http%3A%2F%2Fwww.techblogstop.com%2Fmost-beautiful-landscape-hd-wallpapers%2F&psig=AFQjCNFQNupvD8xC2EExuAgM4HeFuVdEmA&ust=1488625579274977')
+    background-image: url('../giphy.gif')
 }
 
-
-
-
-/*  .final-score {
+  .final-score {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -32,11 +29,7 @@
     
 }
 
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 body {
     background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(back.jpg);
@@ -61,7 +54,7 @@ body {
 }
 
 .player-0-panel,
-.player-1-panel {
+.player-panel {
     width: 50%;
     float: left;
     height: 600px;
@@ -127,19 +120,19 @@ body {
 }
 
 button {
-    position: absolute;
+/*
+    position: relative;
     width: 200px;
     left: 50%;
+*/
     transform: translateX(-50%);
     color: #555;
     background: none;
     border: none;
-    font-family: Lato;
     font-size: 20px;
-    text-transform: uppercase;
     cursor: pointer;
     font-weight: 300;
-    transition: background-color 0.3s, color 0.3s;
+   
 }
 
 button:hover { font-weight: 600; }
@@ -149,16 +142,6 @@ button:focus {
     outline: none;
 }
 
-i {
-    color: #EB4D4D;
-    display: inline-block;
-    margin-right: 15px;
-    font-size: 32px;
-    line-height: 1;
-    vertical-align: text-top;
-    margin-top: -4px;
-    transition: margin 0.3s;
-}
 
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
@@ -174,4 +157,4 @@ i {
 }
 
 .winner { background-color: #f7f7f7; }
-.winner .player-name { font-weight: 300; color: #EB4D4D; }  */
+.winner .player-name { font-weight: 300; color: #EB4D4D; }  

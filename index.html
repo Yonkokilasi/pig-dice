@@ -17,7 +17,6 @@
 </head>
 <body>
     <div id="header">
-       <img src="img/giphy.gif">
       
     </div>
     <div class="wrapper">
@@ -41,30 +40,24 @@
       <button class="btn-new">New game</button>
        <div class="row">
           <div class="col-md-6">
-              <h2>Player 1 :<span id="player1Name"></h2>
+              <h2>Player 1 :<span id="player1Name"></span></h2>
+        <button id="btn-roll-p1" class="btn-success">Roll dice</button>
+        <button id="btn-hold-p1"class="btn-success">Hold</button>
+              <h2>Dice Roll: <span id="die-roll-1"></span></h2>
+              <p>Round Total:<span id="round-total-1"></span></p>
+              <p>Total Score:<span id="total-score-1"></span>
+           </div>
+          <div class="col-md-6">
+          <h2>Player 2:<span id="player2Name"></span></h2>
+        <button id="btn-roll-p2" class="btn-success">Roll dice</button>
+        <button id="btn-hold-p2"class="btn-success">Hold</button>
+              <h2>Dice Roll: <span id="die-roll-2"></span></h2>
+              <p>Round Total:<span id="round-total-2"></span></p>
+              <p>Total Score:<span id="total-score-2"></span></p>
            </div>
            </div>
-        <div class="player-name" id="name-0">Player 1
-        </div>
-        
-        <div class="player-score" id="score-0">0</div>
-        <div class="player-current-label">Current</div>
-        <div class="player-current-score" id="current-0">0</div>
-       <button class="btn-roll-p1">Roll dice</button>
-        <button class="btn-hold-p1">Hold</button>
-        
-        <div class="player-panel">
-        <div class="player-name" id="name-1"><h2>Player 2</h2></div>
-            <div class="player-score" id="score-1">0</div>
-            <div class="player-current-label">Current</div>
-            <div class="player-current-score" id="current-1">0</div>
-        </div>
-         <button class="btn-roll-p2">Roll dice</button>
-            <button class="btn-hold-p2">Hold</button>
-         </div>
-         
             <img src="img/5.png" alt="Dice" class="dice">
     </div>
-    </div>
+        </div></div>
 </body>
 </html>
